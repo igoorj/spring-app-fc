@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+      - develop
+  pull_requests:
+    branches:
+      - main
+
 jobs:
   check-application:
     runs-on: ubuntu-latest
