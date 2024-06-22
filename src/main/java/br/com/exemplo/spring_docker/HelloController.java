@@ -10,6 +10,6 @@ public class HelloController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String hello() {
-        return "Ola mundo, ola docker !!!!";
+        return "Ola mundo, ola docker";
     }
 }
