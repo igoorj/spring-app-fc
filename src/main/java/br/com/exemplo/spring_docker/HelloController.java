@@ -1,5 +1,6 @@
 package br.com.exemplo.spring_docker;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
+    @Value("${config}")
+    private String variavel;
 
     @RequestMapping(method = RequestMethod.GET)
     public String hello() {
