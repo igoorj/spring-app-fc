@@ -8,9 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Value("${config}")
-    private String variavel;
-
     @RequestMapping(method = RequestMethod.GET)
     public String hello() {
         return "Ola mundo, ola docker !!!!";
