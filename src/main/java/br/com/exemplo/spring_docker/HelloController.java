@@ -14,6 +14,6 @@ public class HelloController {
     }
 
     Boolean isSameNumberValue(AtomicLong a, AtomicLong b) {
-        return a.equals(b);
+        return a.get() == b.get();
     }
 }
